@@ -1,0 +1,67 @@
+.ingredients{
+    position: absolute;
+    height: 750px;
+    width: 1440px;
+    left: calc(50% - 1440px/2);
+    right: 0px;
+    top: 1500px;
+    @include bg('../img/bg1.png');  
+    
+    
+    @include tablet {
+       text-align: center;
+       height: 753px;
+       
+      
+    }
+   
+}
+.blackKonteiner{
+    position: absolute;
+    width: 629px;
+    height: 550px;
+    left: 735px;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .products{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+         
+      }
+      .textHeader{
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .text{
+        width: 470px;
+        height: 157px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        text-align: center;
+        color: #FFFFFF;
+
+      }
+      @include tablet {
+      
+       left:400px;
+       top:100px;
+        
+       
+     }
+
+}

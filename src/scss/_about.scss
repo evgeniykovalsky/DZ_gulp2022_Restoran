@@ -1,0 +1,88 @@
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    width: 1440px;
+    height: 750px;
+    left: calc(50% - 1440px/2);
+    top: 750px;
+
+    background: linear-gradient(270deg, #F4F2F2 18.35%, #FFFFFF 84.09%);
+   // box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
+   
+
+    
+   
+    @include tablet {
+       text-align: center;
+       height: 864px;
+       .rightSide img {
+        display: none;
+
+       }
+       
+}
+}
+.leftSide{
+
+    .title{
+        position: absolute;
+         left: 185px;
+         top: 103px;
+         font-family: 'Yeseva One';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 36px;
+         line-height: 42px;
+         text-align: center;
+         color: #CC9900;
+         @include tablet {
+           left:500px;
+            
+     }
+   
+      }
+      .dishText{
+        position: absolute;
+        left:154px ;
+        top:202px;
+        width:471px;
+        height: 141px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+         text-align: center;
+         color: #4C4C4C;
+         @include tablet {
+            left:500px;
+             
+      }
+    
+       } 
+   .cook{
+    position: absolute;
+    width: 289px;
+    height: 292px;
+    left: 295px;
+    top: 359px;
+    @include tablet {
+        top:500px;
+        left:600px;
+         
+  }
+   }
+
+}
+.rightSide{
+    img{
+        position: absolute;
+        width: 630px;
+        height: 551px;
+        left: 735px;
+        top: 99px;
+
+
+    }
+}

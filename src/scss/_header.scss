@@ -1,0 +1,109 @@
+.header{
+    position: absolute;
+    width: 1440px;
+    height: 750px;
+    left: calc(50% - 1440px/2);
+    top: 0px;
+    @include bg('../img/header_background.jpg');  
+    @include tablet {
+       text-align: center;
+       height: 1024px;
+       
+      
+    }
+      
+    .text{
+     position: absolute;
+     width: 1069px;
+     height: 187px;
+     left: 185px;
+     top: 212px;
+
+     font-family: 'Yeseva One';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 90px;
+     line-height: 104px;
+     text-align: center;
+/* Белый */
+      color: #FFFFFF;
+      text-shadow: 2px 2px 0px #000000;
+      
+      @include tablet {
+        top:100px;
+         height: 317px;
+         width: 706px;
+         text-align: center;
+         left:350px;
+       
+      
+    }
+    }
+    .vector{
+        box-sizing: border-box;
+        position: absolute;
+        left: 41.32%;
+        right: 41.32%;
+        top: 61.02%;
+        bottom: 32.83%;
+       // background: #FFFFFF;
+/* Белый */
+       // border: 1px solid #FFFFFF;
+       @include tablet {
+        top:45%;
+       
+        //text-align: center;
+        // display:flex;
+        // justify-content:center;
+        // align-items: center;
+        // flex-direction:column;
+       
+      
+    }
+    }
+    
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:470px ;
+    position: absolute;
+    left:485px;
+    top:568px;
+   
+    @include tablet {
+        text-align: center;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction:column;
+      
+    }
+    
+}
+
+   
+    .button {
+        text: {
+            transform:uppercase;
+            decoration: none;
+        }
+        background: rgba(255, 255, 255, 0.6);
+        border: 1px solid #FFFFFF;
+        line-height: 1.5em;
+        color: $color3;
+        letter-spacing: 0.1em;
+        display:inline-block;
+        padding: 10px 30px;
+        border: 1px solid $color3;
+       // border-radius:5px;
+        margin: 25px 0 0 0;
+        transition-property:background-color;
+        transition-duration: 0.6s;
+    
+        &:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+    }

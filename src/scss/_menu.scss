@@ -1,0 +1,80 @@
+.menu{
+     display:flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+
+    position: absolute;
+    height: 1125px;
+    width:1440px;
+    left: calc(50% - 1440px/2);
+    right: 0px;
+    top: 2250px;
+
+   background:  linear-gradient(270deg, #FFFFFF 18.35%, #F3F1F1 84.09%);
+   box-shadow: inset 0px 4px 40px rgba(0, 0, 0, 0.1);
+   @include tablet {
+    display: none;
+     
+}
+
+   .menu_item{
+     width: 49%;
+     position: relative;
+     left: 50px;
+        
+    
+
+     .menu_header{
+        .dishText1{
+            position: relative;
+            top:25px;
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            color: #CC9900;
+        }
+        .vector{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+     }
+     .menuName{
+
+        p{
+            display: inline;
+            margin-left: 130px;
+        }
+        .smoltext{
+            margin: 0px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 29px;
+            color: #4C4C4C;
+           
+            
+        }
+
+        ul li{
+            width:474px;
+           list-style-type: none;
+           font-family: 'Yeseva One';
+           font-style: normal;
+           font-weight: 400;
+           font-size: 21px;
+           line-height: 36px;
+           color: #C89F2D;
+           
+           border-bottom:1px solid #C89F2D;
+           margin-top: 43px;
+
+        }
+     }
+    
+}
+}

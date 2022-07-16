@@ -1,0 +1,77 @@
+.footer{
+    position: absolute;
+    width: 1440px;
+    height: 375px;
+    left: calc(50% - 1440px/2);
+    top:4125px;
+    background: #000000;
+    opacity: 0.75;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+
+    .footer_item{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .textHeader{
+        position: absolute;
+        top:50px;
+        
+
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+    .vector{
+        position: absolute;
+        text-align: center;
+        top:109px;
+    }
+    .text{
+        position: absolute;
+        top:191px;
+        width: 410px;
+        height: 134px;
+        padding-left: 45px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        text-align: center; 
+        color: #FFFFFF;
+    }
+    .paySystem{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: absolute;
+        top:267px;
+        margin-left:10px;
+
+
+        .pay{
+            width: 44px;
+            height: 28px;
+           background: #FFFFFF;
+           border: 2px solid black;
+           font-size: 13px;
+           text-align: center;
+          vertical-align: middle;
+           padding-top: 5px 5px;
+           margin-left: 5px;
+
+            }
+
+    }
+
+}
